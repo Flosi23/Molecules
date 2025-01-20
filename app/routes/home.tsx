@@ -67,8 +67,8 @@ export default function Page() {
   };
 
   return (
-    <div className="container mx-auto grid max-w-screen-xl grid-cols-5 gap-x-12 py-12">
-      <div className="col-span-3">
+    <div className="container mx-auto grid max-w-screen-xl grid-cols-5 gap-12 px-4 py-6 sm:px-8 sm:py-12">
+      <div className="col-span-full row-start-2 lg:col-span-3 lg:row-start-auto">
         <h3 className="text-3xl font-bold">Generator</h3>
         <p className="text-base text-muted-foreground">
           Generates molecules based on the atoms you provide.{" "}
@@ -79,7 +79,7 @@ export default function Page() {
         <h3 className="mb-8 mt-12 text-3xl font-bold">Results</h3>
         <ResultTable results={results} />
       </div>
-      <div className="col-span-2 space-y-4">
+      <div className="col-span-full row-start-1 space-y-4 lg:col-span-2 lg:row-start-auto">
         <div>
           <h3 className="text-3xl font-bold">Atoms</h3>
           <p className="text-base text-muted-foreground">
